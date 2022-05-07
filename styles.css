@@ -4,34 +4,90 @@
 
 body {
     width: 100%;
+    background-color: #2453EF;
     overflow-x: hidden;
     margin: 0;
+    color: black;
+}
+
+nav {
+    width: 100vw; 
+    height: 55px; 
+    background-color: #EF24B9;
+    position: sticky;
+    position: -webkit-sticky;
+    padding-top: 25px;
+    top: 0; 
+    left: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20;
+    margin-right: 20;
+}
+
+button {
+    background-color: #141414;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover{
+    scale: 1.02;
+}
+
+#contact-button {
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    padding: 5 40;
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-right: 35;
+    font-weight: 700;
+}
+
+.icon-button {
+    color: black;
+    background-color: Transparent;
+    outline: none;
+    margin-right: 15px;
+}
+
+.title {
+    margin-top: 200px;
+    font-size: 10vw;
+    background-color: none;
+    text-align: center;
 }
 
 .page-content {
-    margin-left: 8vw;
+    background: url("assets/videos/clarity.mov");
+    background-repeat: none;
+    background-position: center;
     max-width: 1300px;
-    padding-right: 8vw;
-    padding: 10 20 10 20;
+    padding: 50 20;
+    z-index: 1;
+    overflow: hidden;
 }
 
-video,
-h1 {
-  font-size: 20vw;
-  font-weight: 700;
-  line-height: 100vh;
-  text-transform: uppercase;
-  text-align: center;
-  background: white;
-  mix-blend-mode: screen;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-video {
-  object-fit: cover;
+#social-buttons-container {
+    display: block;
+    align-items: center;
+    width: 100vw;
+    margin-top: 30;
+    max-width: 400px;
 }
